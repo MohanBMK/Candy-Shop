@@ -1,0 +1,182 @@
+:root
+{
+    --green: #ff7ee1;
+    --black: color rgb(165,165,165);
+    --light-color: #9c9797;
+    --box-shadow: .5rem .5rem  rgb(165, 165, 165);
+    --border: 2rem solid rgba(165,165,165);
+    --outline: .1rem solid rgb(166, 166, 166);
+    
+}
+*
+{
+    font-family: 'MV boli', 'Rockwell';
+    margin: 0;
+    padding: 0;
+    box-sizing: 0; border: box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+  
+
+html {
+    font-size: 62.8%;
+    overflow: scroll;
+}
+body{
+    background: #ffffff;
+    
+}
+
+.btn{
+    border: 1.5px solid;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: #b4fdfd;
+    color: #000000;
+}
+
+.header{
+    z-index: 1;
+    border: 2px solid;
+    position: fixed;
+    top: 10;
+    left: 0;
+    right: 0;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 250px 1fr;
+    padding: 0.5rem 5%;
+    background-color:#b4fdfd;
+   
+    
+}
+.header .My image{
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .top-left {
+    position: absolute;
+    font-size: solid;
+    font-size: 1.25rem;
+    font-weight: bold;
+    top: 11px;
+    left: 55px;
+  }
+
+
+.header .navbar a
+{
+   font-size: 1.7rem;
+   margin: 0.1rem;
+   color: var(--black);
+}
+.header .navbar a:hover{
+    color: var(--green)
+}
+
+.header .search-form{
+    border: 1px solid;
+    position: absolute;
+    top: 110%;
+    right: 2rem;
+    width: 50rem;
+    height: 5rem;
+    background-color: #b4fdfd;
+    border-radius: .5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.header .search-form.active
+{
+    right: 2rem;
+    transition: .4s linear;
+}
+
+.header .search-form input{
+    border: 0px solid;
+    height: 100%;
+    width: 100%;
+    background: none;
+    text-decoration: none;
+    font-size: 1.6rem;
+    columns: var(--black);
+    padding: 0 1.5rem;
+}
+
+.header .search-form label{
+    font-size: 2.2rem;
+    padding-right: 1.5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.header .search-form{
+    color: var(color --green);
+}
+
+.shopping-cart{
+    border: 1px solid;
+    position:absolute;
+    top: 20%;
+    right: 2rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    width: 43rem;
+    background-color: #ff75e165;
+}
+
+.shopping-cart .box{
+    border: 1px solid rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position:relative;
+    margin: 1rem 0;
+}
+
+.shopping-cart .box img{
+    height: 8rem;
+}
+
+
+.header .shopping-cart .box .content h3{
+    color: var(--black);
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.header .shopping-cart .total{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    text-align: justify;
+}
+
+
+footer {
+    background-color: #b4fdfd;
+    color: #000000;
+    text-align: center;
+    padding: 1.5rem;
+    border: solid;
+    font-size: small;
+    margin: 0.5%;
+  }
